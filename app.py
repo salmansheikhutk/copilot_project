@@ -22,9 +22,10 @@ def index():
     cur = conn.cursor()
     cur.execute('SELECT * FROM test_table')
     rows = cur.fetchall()
+    colnames = [desc[0] for desc in cur.description]
     cur.close()
     conn.close()
-    return render_template('index.html', rows=rows)
+    return render_template('index.html', rows=rows, colnames=colnames)
 
 if __name__ == '__main__':
     app.run(debug=True)

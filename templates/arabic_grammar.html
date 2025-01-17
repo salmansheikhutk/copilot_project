@@ -5,18 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basics of Arabic Grammar</title>
     <link rel="stylesheet" href="../static/styles.css">
+    <script src="../static/script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1>Basics of Arabic Grammar</h1>
-        <h2>1. Nouns (Ism)</h2>
+        
+        <h2>1. Nouns (اسم)</h2>
         <p>Nouns in Arabic are words that refer to a person, place, thing, or idea. They can be definite or indefinite.</p>
+        <h3>Test Your Knowledge</h3>
+        <p>Which of the following is a noun?</p>
+        <div>
+            <button onclick="checkAnswer(this, true)" id="noun1">كتاب (Book)</button>
+            <button onclick="checkAnswer(this, false)" id="noun2">يكتب (He writes)</button>
+            <button onclick="checkAnswer(this, false)" id="noun3">في (In)</button>
+        </div>
         
-        <h2>2. Verbs (Fi'l)</h2>
+        <h2>2. Verbs (فعل)</h2>
         <p>Verbs in Arabic indicate actions or states of being. They are conjugated based on tense, person, and number.</p>
+        <h3>Test Your Knowledge</h3>
+        <p>Which of the following is a verb?</p>
+        <div>
+            <button onclick="checkAnswer(this, true)" id="verb2">يكتب (He writes)</button>
+            <button onclick="checkAnswer(this, false)" id="verb1">كتاب (Book)</button>
+            <button onclick="checkAnswer(this, false)" id="verb3">في (In)</button>
+        </div>
         
-        <h2>3. Particles (Harf)</h2>
+        <h2>3. Particles (حرف)</h2>
         <p>Particles are words that do not have a complete meaning on their own and are used to connect words and sentences.</p>
+        <h3>Test Your Knowledge</h3>
+        <p>Which of the following is a particle?</p>
+        <div>
+            <button onclick="checkAnswer(this, true)" id="particle1">في (In)</button>
+            <button onclick="checkAnswer(this, false)" id="particle2">كتاب (Book)</button>
+            <button onclick="checkAnswer(this, false)" id="particle3">يكتب (He writes)</button>
+        </div>
         
         <h2>4. Sentence Structure</h2>
         <p>Arabic sentences can be nominal (starting with a noun) or verbal (starting with a verb).</p>

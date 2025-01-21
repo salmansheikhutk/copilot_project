@@ -1,5 +1,0 @@
-This is from test1.
-This is from test1.
-This is from test1.
-This is from test 1. This should create a conflict. I added this in the conflict.
-

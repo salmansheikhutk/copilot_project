@@ -43,6 +43,50 @@
         
         <h2>4. Sentence Structure</h2>
         <p>Arabic sentences can be nominal (starting with a noun) or verbal (starting with a verb).</p>
+        
+        <h2>GET Request Example</h2>
+        <p>Click the button below to make a GET request.</p>
+        <!-- Button to trigger the GET request -->
+        <button onclick="makeGetRequest()">Make GET Request</button>
+        <!-- Paragraph to display the response from the GET request -->
+        <p id="getResponse"></p>
+        
+        <h2>POST Request Example</h2>
+        <p>Submit the form below to make a POST request.</p>
+        <!-- Form to submit data for the POST request -->
+        <form id="postForm">
+            <label for="data">Enter some data:</label>
+            <input type="text" id="data" name="data" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <!-- Paragraph to display the response from the POST request -->
+        <p id="postResponse"></p>
+        
+        <h2>Database GET Example</h2>
+        <p>Click the link below to fetch and display all names from the database.</p>
+        <!-- Link to trigger the database GET request -->
+        <a href="{{ url_for('get_names') }}">Get Names</a>
+        
+        <!-- Display the names fetched from the database -->
+        {% if names %}
+            <h2>Names List</h2>
+            <ul>
+                {% for name in names %}
+                    <li>{{ name[0] }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        
+        <h2>POST New Name Example</h2>
+        <p>Submit the form below to add a new name to the database.</p>
+        <!-- Form to submit a new name to the database -->
+        <form id="postNameForm">
+            <label for="newName">Enter a new name:</label>
+            <input type="text" id="newName" name="newName" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <!-- Paragraph to display the response from the POST request -->
+        <p id="postNameResponse"></p>
     </div>
 </body>
 </html>

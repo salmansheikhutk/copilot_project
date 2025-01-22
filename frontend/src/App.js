@@ -5,7 +5,8 @@ function App() {
     const [data, setData] = useState('Loading...');
 
     useEffect(() => {
-        fetch('http://127.0.0.1:5000/get_example')  // Call Flask API
+        //fetch('http://127.0.0.1:5000/get_example')  // Call Flask API
+        fetch('/get_example')
             .then(response => response.json())
             .then(data => setData(data.message)) // Update state with the response
             .catch(error => console.error('Error fetching data:', error));

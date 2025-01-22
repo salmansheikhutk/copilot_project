@@ -1,31 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
+    const [data, setData] = useState('Loading...');
+
     useEffect(() => {
-        console.log("Fetching example data from the backend...");
-        // Fetch example data from the Flask backend and print to console log
-        fetch('/get_example')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log("Fetched example data:", data.message);
-            })
-            .catch(error => {
-                console.error('Error fetching example data:', error);
-                console.log("Didn't run the fetch successfully.");
-            });
+        fetch('http://127.0.0.1:5000/get_example')  // Call Flask API
+            .then(response => response.json())
+            .then(data => setData(data.message)) // Update state with the response
+            .catch(error => console.error('Error fetching data:', error));
     }, []);
 
     return (
-        <div className="container">
-            <h1>Check the console for fetched example data</h1>
+        <div style={{ textAlign: 'center', marginTop: '50px' }}>
+            <h1>React + Flask Example</h1>
+            <p>{data}</p>
         </div>
     );
 }
 
 export default App;
+

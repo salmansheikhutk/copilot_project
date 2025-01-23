@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JS
-import Header from './components/header/Header';
+import Header from './components/header/Header'; // Correct the import path and casing
 import PropsExample from './pages/PropsExample';
 import SimpleFunction from './pages/SimpleFunction';
 import SimpleState from './pages/SimpleState';

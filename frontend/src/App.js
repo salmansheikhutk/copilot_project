@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JS
 import Header from './components/header/Header';
 import PropsExample from './pages/PropsExample';
 import SimpleFunction from './pages/SimpleFunction';

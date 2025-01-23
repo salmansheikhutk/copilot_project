@@ -1,6 +1,5 @@
 import React from 'react';
 import './Header.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JS
 import { FaHome, FaBars } from 'react-icons/fa'; // Import icons from react-icons
 
 function Header({ setActiveComponent }) {

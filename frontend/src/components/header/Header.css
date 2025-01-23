@@ -9,51 +9,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 60px; /* Return the header to its normal size */
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropbtn {
-    background-color: #333;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.dropbtn:hover {
-    background-color: #555;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #444;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1000; /* Ensure the dropdown is above other content */
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-.dropdown-content a:hover {
-    background-color: #666;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown-menu {
+    z-index: 1050; /* Ensure the dropdown is above other content */
+    position: absolute; /* Ensure the dropdown is positioned correctly */
 }

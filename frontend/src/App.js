@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import PropsExample from './components/PropsExample';
-import SimpleFunction from './components/SimpleFunction';
-import SimpleState from './components/SimpleState';
-import EventHandling from './components/EventHandling';
-import UseEffectAPI from './components/UseEffectAPI';
-import UseContextProvider from './components/UseContextExample';
-import ConditionalRendering from './components/ConditionalRendering';
-import ListExample from './components/ListExample';
+import PropsExample from './pages/PropsExample';
+import SimpleFunction from './pages/SimpleFunction';
+import SimpleState from './pages/SimpleState';
+import EventHandling from './pages/EventHandling';
+import UseEffectAPI from './pages/UseEffectAPI';
+import UseContextProvider from './pages/UseContextExample';
+import ConditionalRendering from './pages/ConditionalRendering';
+import ListExample from './pages/ListExample';
 
 // The App function is a React component that serves as the root component of the application.
 // It passes a prop to the PropsExample component and calls the SimpleFunction, SimpleState, EventHandling, UseEffectAPI, UseContextProvider, ConditionalRendering, and ListExample components.

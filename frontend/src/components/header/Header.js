@@ -1,16 +1,19 @@
 import React from 'react';
 import './Header.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JS
+import { FaHome, FaBars } from 'react-icons/fa'; // Import icons from react-icons
 
 function Header({ setActiveComponent }) {
     return (
         <header className="header">
             <nav className="navbar navbar-dark bg-dark">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#" onClick={() => setActiveComponent('', 'Welcome! Please select a page from the dropdown menu.')}>Home</a>
+                    <a className="navbar-brand" href="#" onClick={() => setActiveComponent('', 'Welcome! Please select a page from the dropdown menu.')}>
+                        <FaHome /> {/* Home icon */}
+                    </a>
                     <div className="dropdown ms-auto">
                         <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                            Menu
+                            <FaBars /> {/* Menu icon */}
                         </button>
                         <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                             <li><a className="dropdown-item" href="#simple-function" onClick={() => setActiveComponent('SimpleFunction', 'Simple Function')}>Simple Function</a></li>

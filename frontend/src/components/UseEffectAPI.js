@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function DataExample() {
+function UseEffectAPI() {
     const [exampleData, setExampleData] = useState('Loading...');
     const [allData, setAllData] = useState([]);
 
@@ -32,4 +32,4 @@ function DataExample() {
     );
 }
 
-export default DataExample;
+export default UseEffectAPI;

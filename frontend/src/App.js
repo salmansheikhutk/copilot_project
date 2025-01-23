@@ -4,9 +4,13 @@ import PropsExample from './components/PropsExample';
 import SimpleFunction from './components/SimpleFunction';
 import SimpleState from './components/SimpleState';
 import EventHandling from './components/EventHandling';
+import UseEffectAPI from './components/UseEffectAPI';
+import UseContextProvider from './components/UseContextExample';
+import ConditionalRendering from './components/ConditionalRendering';
+import ListExample from './components/ListExample';
 
 // The App function is a React component that serves as the root component of the application.
-// It passes a prop to the PropsExample component and calls the SimpleFunction, SimpleState, and EventHandling components.
+// It passes a prop to the PropsExample component and calls the SimpleFunction, SimpleState, EventHandling, UseEffectAPI, UseContextProvider, ConditionalRendering, and ListExample components.
 function App() {
     return (
         <div className="App">
@@ -18,6 +22,14 @@ function App() {
             <SimpleState />
             {/* Calling the EventHandling component */}
             <EventHandling />
+            {/* Calling the UseEffectAPI component */}
+            <UseEffectAPI />
+            {/* Calling the UseContextProvider component */}
+            <UseContextProvider />
+            {/* Calling the ConditionalRendering component */}
+            <ConditionalRendering />
+            {/* Calling the ListExample component */}
+            <ListExample />
         </div>
     );
 }

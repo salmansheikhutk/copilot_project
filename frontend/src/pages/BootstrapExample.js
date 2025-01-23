@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import { FaThumbsUp, FaExclamationTriangle } from 'react-icons/fa'; // Import icons from react-icons
 
 function BootstrapExample() {
     return (
@@ -18,13 +19,15 @@ function BootstrapExample() {
 
             {/* A simple Bootstrap button component */}
             <div className="mt-4">
-                <button type="button" className="btn btn-success">Success Button</button>
+                <button type="button" className="btn btn-success">
+                    <FaThumbsUp /> Success Button {/* Icon added to the button */}
+                </button>
             </div>
 
             {/* A simple Bootstrap alert component */}
             <div className="mt-4">
                 <div className="alert alert-warning" role="alert">
-                    This is a warning alert—check it out!
+                    <FaExclamationTriangle /> This is a warning alert—check it out! {/* Icon added to the alert */}
                 </div>
             </div>
         </div>

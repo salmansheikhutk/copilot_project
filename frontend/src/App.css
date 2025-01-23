@@ -24,6 +24,17 @@
   color: white;
 }
 
+.content {
+  margin-top: 20px; /* Add space between the header and the components below */
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
 .App-link {
   color: #61dafb;
 }

@@ -49,7 +49,7 @@ function App() {
             <Header setActiveComponent={handleSetActiveComponent} />
             <div className="content">
                 {/* Display the title */}
-                <h1>{title}</h1>
+                <h1 className="title">{title}</h1>
                 {/* Render the active component */}
                 {renderComponent()}
             </div>

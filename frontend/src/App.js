@@ -1,37 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
+import PropsExample from './components/PropsExample';
+import SimpleFunction from './components/SimpleFunction';
+import SimpleState from './components/SimpleState';
+import EventHandling from './components/EventHandling';
 
+// The App function is a React component that serves as the root component of the application.
+// It passes a prop to the PropsExample component and calls the SimpleFunction, SimpleState, and EventHandling components.
 function App() {
-    const [exampleData, setExampleData] = useState('Loading...');
-    const [allData, setAllData] = useState([]);
-
-    useEffect(() => {
-        // Fetch example data from the Flask backend
-        fetch('/get_example')
-            .then(response => response.json())
-            .then(data => setExampleData(data.message))
-            .catch(error => console.error('Error fetching example data:', error));
-
-        // Fetch all data from the test_table
-        fetch('/get_all_data')
-            .then(response => response.json())
-            .then(data => setAllData(data))
-            .catch(error => console.error('Error fetching all data:', error));
-    }, []);
-
     return (
-        <div style={{ textAlign: 'center', marginTop: '50px' }}>
-            <h1>React + Flask Example</h1>
-            <p>{exampleData}</p>
-            <h2>All Data from test_table:</h2>
-            <ul>
-                {allData.map((row, index) => (
-                    <li key={index}>{JSON.stringify(row)}</li>
-                ))}
-            </ul>
+        <div className="App">
+            {/* Calling the SimpleFunction component */}
+            <SimpleFunction />
+            {/* Passing a prop called 'message' to the PropsExample component */}
+            <PropsExample message="Hello, this is a prop!" />
+            {/* Calling the SimpleState component */}
+            <SimpleState />
+            {/* Calling the EventHandling component */}
+            <EventHandling />
         </div>
     );
 }
 
+// export default App allows this component to be imported and used in other files.
 export default App;
 
+// Note: In this file, we use function declarations (e.g., function App()) instead of arrow functions (e.g., const App = () => {}).
+// Function declarations are hoisted, meaning they can be called before they are defined in the code.
+// Arrow functions are not hoisted and are often used for shorter functions or when using 'this' is not required.

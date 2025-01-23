@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import Header from './components/header/Header';
 import PropsExample from './pages/PropsExample';
 import SimpleFunction from './pages/SimpleFunction';
 import SimpleState from './pages/SimpleState';
@@ -10,26 +11,48 @@ import ConditionalRendering from './pages/ConditionalRendering';
 import ListExample from './pages/ListExample';
 
 // The App function is a React component that serves as the root component of the application.
-// It passes a prop to the PropsExample component and calls the SimpleFunction, SimpleState, EventHandling, UseEffectAPI, UseContextProvider, ConditionalRendering, and ListExample components.
 function App() {
+    const [activeComponent, setActiveComponent] = useState('');
+    const [title, setTitle] = useState('Welcome! Please select a page from the dropdown menu.');
+
+    const renderComponent = () => {
+        switch (activeComponent) {
+            case 'SimpleFunction':
+                return <SimpleFunction />;
+            case 'PropsExample':
+                return <PropsExample message="Hello, this is a prop!" />;
+            case 'SimpleState':
+                return <SimpleState />;
+            case 'EventHandling':
+                return <EventHandling />;
+            case 'UseEffectAPI':
+                return <UseEffectAPI />;
+            case 'UseContextProvider':
+                return <UseContextProvider />;
+            case 'ConditionalRendering':
+                return <ConditionalRendering />;
+            case 'ListExample':
+                return <ListExample />;
+            default:
+                return null;
+        }
+    };
+
+    const handleSetActiveComponent = (component, title) => {
+        setActiveComponent(component);
+        setTitle(title);
+    };
+
     return (
         <div className="App">
-            {/* Calling the SimpleFunction component */}
-            <SimpleFunction />
-            {/* Passing a prop called 'message' to the PropsExample component */}
-            <PropsExample message="Hello, this is a prop!" />
-            {/* Calling the SimpleState component */}
-            <SimpleState />
-            {/* Calling the EventHandling component */}
-            <EventHandling />
-            {/* Calling the UseEffectAPI component */}
-            <UseEffectAPI />
-            {/* Calling the UseContextProvider component */}
-            <UseContextProvider />
-            {/* Calling the ConditionalRendering component */}
-            <ConditionalRendering />
-            {/* Calling the ListExample component */}
-            <ListExample />
+            {/* Calling the Header component */}
+            <Header setActiveComponent={handleSetActiveComponent} />
+            <div className="content">
+                {/* Display the title */}
+                <h1>{title}</h1>
+                {/* Render the active component */}
+                {renderComponent()}
+            </div>
         </div>
     );
 }

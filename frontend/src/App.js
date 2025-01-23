@@ -11,6 +11,7 @@ import UseEffectAPI from './pages/UseEffectAPI';
 import UseContextProvider from './pages/UseContextExample';
 import ConditionalRendering from './pages/ConditionalRendering';
 import ListExample from './pages/ListExample';
+import BootstrapExample from './pages/BootstrapExample'; // Import BootstrapExample
 
 // The App function is a React component that serves as the root component of the application.
 function App() {
@@ -35,6 +36,8 @@ function App() {
                 return <ConditionalRendering />;
             case 'ListExample':
                 return <ListExample />;
+            case 'BootstrapExample':
+                return <BootstrapExample />;
             default:
                 return null;
         }

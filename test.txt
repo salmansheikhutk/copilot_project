@@ -1,3 +1,3 @@
 totally new line
 
-this is something else
+conflict line

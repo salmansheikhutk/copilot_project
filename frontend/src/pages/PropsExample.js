@@ -5,7 +5,8 @@ import React from 'react';
 function PropsExample({ message }) {
     return (
         <div style={{ textAlign: 'center', marginTop: '50px' }}>
-            <h1>{message}</h1>
+            <h1 className="title">Props Example</h1>
+            <p>{message}</p>
         </div>
     );
 }

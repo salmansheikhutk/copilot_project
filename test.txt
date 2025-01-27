@@ -1,3 +1,5 @@
 totally new line
 
-conflict line
+accept this new line from updates/test. updates/test will already be good. will dev reflect this?
+
+change this new line, and see if it updates at BOTH places. As will be new in BOTH.

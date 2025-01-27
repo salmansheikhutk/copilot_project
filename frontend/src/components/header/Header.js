@@ -25,6 +25,7 @@ function Header() {
                             <li><Link className="dropdown-item" to="/conditional-rendering">Conditional Rendering</Link></li>
                             <li><Link className="dropdown-item" to="/list-example">List Example</Link></li>
                             <li><Link className="dropdown-item" to="/bootstrap-example">Bootstrap Example</Link></li>
+                            <li><Link className="dropdown-item" to="/checkout-example">Checkout Example</Link></li>
                         </ul>
                     </div>
                 </div>

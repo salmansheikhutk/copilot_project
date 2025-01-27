@@ -9,6 +9,7 @@ import UseContextProvider from '../pages/UseContextExample';
 import ConditionalRendering from '../pages/ConditionalRendering';
 import ListExample from '../pages/ListExample';
 import BootstrapExample from '../pages/BootstrapExample';
+import CheckoutExample from '../pages/CheckoutExample';
 import Header from '../components/header/Header';
 
 function AppRoutes() {
@@ -28,6 +29,7 @@ function AppRoutes() {
                     <Route path="/conditional-rendering" component={ConditionalRendering} />
                     <Route path="/list-example" component={ListExample} />
                     <Route path="/bootstrap-example" component={BootstrapExample} />
+                    <Route path="/checkout-example" component={CheckoutExample} />
                     <Route path="/" exact>
                         <h1 className="title">Welcome! Please select a page from the dropdown menu.</h1>
                     </Route>

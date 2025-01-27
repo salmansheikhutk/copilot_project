@@ -1,5 +1,7 @@
 totally new line
 
-conflict line
 
-new conflict line
+accept this new line from updates/test. updates/test will already be good. will dev reflect this?
+
+BOTH should update?
+

@@ -18,7 +18,9 @@ function AppRoutes() {
             <div className="content">
                 <Switch>
                     <Route path="/simple-function" component={SimpleFunction} />
-                    <Route path="/props-example" component={PropsExample} />
+                    <Route path="/props-example">
+                        <PropsExample message="Hello, this is a prop!" />
+                    </Route>
                     <Route path="/simple-state" component={SimpleState} />
                     <Route path="/event-handling" component={EventHandling} />
                     <Route path="/use-effect-api" component={UseEffectAPI} />

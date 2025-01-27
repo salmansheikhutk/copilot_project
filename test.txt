@@ -1,3 +1,5 @@
 totally new line
 
 conflict line
+
+new conflict line

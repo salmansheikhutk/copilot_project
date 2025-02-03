@@ -27,6 +27,7 @@ function Header() {
                             <li><Link className="dropdown-item" to="/bootstrap-example">Bootstrap Example</Link></li>
                             <li><Link className="dropdown-item" to="/checkout-example">Checkout Example</Link></li>
                             <li><Link className="dropdown-item" to="/redux-example">Redux Example</Link></li> {/* Add ReduxExample to the menu */}
+                            <li><Link className="dropdown-item" to="/example1">Example 1</Link></li> {/* Add Example1 to the menu */}
                         </ul>
                     </div>
                 </div>

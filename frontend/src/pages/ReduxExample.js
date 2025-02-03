@@ -8,11 +8,13 @@ function ReduxExample() {
     const asyncMessage = useSelector(state => state.simple.asyncMessage);
 
     // Dispatch the synchronous action
+    // This updates the state with a simple message
     const handleSyncClick = () => {
         dispatch(simpleAction());
     };
 
     // Dispatch the asynchronous action
+    // This updates the state with an asynchronous message after a delay
     const handleAsyncClick = () => {
         dispatch(simpleActionAsync());
     };

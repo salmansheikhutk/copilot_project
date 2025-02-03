@@ -7,6 +7,7 @@ const initialState = {
 };
 
 // Reducer function to handle the simple action and asynchronous action
+// This reducer updates the state based on the action type and payload
 const simpleReducer = (state = initialState, action) => {
     switch (action.type) {
         case SIMPLE_ACTION:

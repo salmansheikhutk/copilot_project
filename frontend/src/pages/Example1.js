@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './Example1.css'; // Import custom CSS for styling
 
-function Example1() {
+
+
+
+
+
+const Example1 = () => {
     return (
-        <div style={{ textAlign: 'center', marginTop: '50px' }}>
-            <h1 className="title">Example 1</h1>
-            {/* Content will be added later */}
+        <div>
+            <h1>Hello, World!</h1>
         </div>
-    );
-}
+    )
+};
 
 export default Example1;

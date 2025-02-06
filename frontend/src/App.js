@@ -16,7 +16,7 @@ import BootstrapExample from './pages/BootstrapExample'; // Import BootstrapExam
 // The App function is a React component that serves as the root component of the application.
 function App() {
     const [activeComponent, setActiveComponent] = useState('');
-    const [title, setTitle] = useState('Welcome! Please select a page from the dropdown menu.');
+    const [title, setTitle] = useState('Welcome! This edit is made in replit.');
 
     const renderComponent = () => {
         switch (activeComponent) {

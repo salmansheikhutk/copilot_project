@@ -12,6 +12,7 @@ function ConditionalRendering() {
 
     return (
         <div style={{ textAlign: 'center', marginTop: '50px' }}>
+            <h1 className="title">Conditional Rendering</h1>
             {/* A button to toggle the visibility of the message */}
             <button onClick={toggleVisibility}>
                 {isVisible ? 'Hide' : 'Show'} Message

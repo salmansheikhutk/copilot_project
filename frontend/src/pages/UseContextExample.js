@@ -10,6 +10,7 @@ function UseContextExample() {
 
     return (
         <div style={{ textAlign: 'center', marginTop: '50px' }}>
+            <h1 className="title">Use Context</h1>
             {/* Display the Context value */}
             <h1>Context Value: {value}</h1>
         </div>

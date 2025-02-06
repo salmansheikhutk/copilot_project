@@ -13,6 +13,7 @@ function SimpleState() {
 
     return (
         <div style={{ textAlign: 'center', marginTop: '50px' }}>
+            <h1 className="title">Simple State</h1>
             {/* Display the current count */}
             <h1>Count: {count}</h1>
             {/* A button to increment the count when clicked */}

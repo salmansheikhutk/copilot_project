@@ -20,6 +20,7 @@ function UseEffectAPI() {
 
     return (
         <div style={{ textAlign: 'center', marginTop: '50px' }}>
+            <h1 className="title">Use Effect API</h1>
             <h1>React + Flask Example</h1>
             <p>{exampleData}</p>
             <h2>All Data from test_table:</h2>

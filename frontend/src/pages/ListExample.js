@@ -7,6 +7,7 @@ function ListExample() {
 
     return (
         <div style={{ textAlign: 'center', marginTop: '50px' }}>
+            <h1 className="title">List Example</h1>
             <h1>List of Items</h1>
             {/* Render the list of items using the map function */}
             <ul>

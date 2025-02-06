@@ -5,6 +5,7 @@ import { FaThumbsUp, FaExclamationTriangle } from 'react-icons/fa'; // Import ic
 function BootstrapExample() {
     return (
         <div className="container mt-5">
+            <h1 className="title">Bootstrap Example</h1>
             {/* A simple Bootstrap card component */}
             <div className="card">
                 <div className="card-header">

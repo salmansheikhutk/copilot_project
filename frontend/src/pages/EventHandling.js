@@ -9,6 +9,7 @@ function EventHandling() {
 
     return (
         <div style={{ textAlign: 'center', marginTop: '50px' }}>
+            <h1 className="title">Event Handling</h1>
             {/* A button that triggers the handleClick function when clicked */}
             <button onClick={handleClick}>Click Me</button>
         </div>

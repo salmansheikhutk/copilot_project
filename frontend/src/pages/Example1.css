@@ -1,0 +1,35 @@
+.weather-app {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.weather-form {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin: 10px auto;
+    width: 200px;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.temperature {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.error {
+    color: red;
+}

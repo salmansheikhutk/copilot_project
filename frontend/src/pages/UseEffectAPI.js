@@ -6,13 +6,13 @@ function UseEffectAPI() {
 
     useEffect(() => {
         // Fetch example data from the Flask backend
-        fetch('/get_example')
+        fetch('http://0.0.0.0:5000/get_example')
             .then(response => response.json())
             .then(data => setExampleData(data.message))
             .catch(error => console.error('Error fetching example data:', error));
 
         // Fetch all data from the test_table
-        fetch('/get_all_data')
+        fetch('http://0.0.0.0:5000/get_all_data')
             .then(response => response.json())
             .then(data => setAllData(data))
             .catch(error => console.error('Error fetching all data:', error));

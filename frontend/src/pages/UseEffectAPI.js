@@ -24,11 +24,11 @@ function UseEffectAPI() {
             <h1>React + Flask Example</h1>
             <p>{exampleData}</p>
             <h2>All Data from test_table:</h2>
-            <ul>
+            {/* <ul>
                 {allData.map((row, index) => (
                     <li key={index}>{JSON.stringify(row)}</li>
                 ))}
-            </ul>
+            </ul> */}
         </div>
     );
 }

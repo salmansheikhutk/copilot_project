@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './Example1.css'; // Import custom CSS for styling
 
-
-
-
+function amazingFunction() {
+    const button = document.querySelector('button');
+    button.style.backgroundColor = 'blue';
+}
 
 
 const Example1 = () => {

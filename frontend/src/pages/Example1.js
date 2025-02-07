@@ -10,6 +10,7 @@ const Example1 = () => {
     return (
         <div>
             <h1>Hello, World!</h1>
+            <button>Make this something amazing</button>
         </div>
     )
 };
